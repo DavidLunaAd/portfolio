@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+.animated_robert {
+  display: inline-block;
+
+  animation: fadeIn; /*referring directly to the animation's @keyframe declaration*/
+  animation-duration: 1s; /* don't forget to set a duration!*/
+}
+
+.animated_angelina {
+  display: inline-block;
+
+  animation: fadeIn; /*referring directly to the animation's @keyframe declaration*/
+  animation-duration: 2s; /* don't forget to set a duration!*/
+}
+
+.animated_patrick {
+  display: inline-block;
+
+  animation: fadeIn; /*referring directly to the animation's @keyframe declaration*/
+  animation-duration: 3s; /* don't forget to set a duration!*/
+}
