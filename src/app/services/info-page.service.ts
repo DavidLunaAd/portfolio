@@ -25,7 +25,7 @@ export class InfoPageService {
     .subscribe( (resp: InfoPage) => {
           this.cargada = true;
           this.info= resp;
-          console.log("Info assets", resp);
+         // console.log("Info assets", resp);
     })
   }
 
@@ -33,6 +33,6 @@ export class InfoPageService {
     this.http.get('https://angular-html-39a0c-default-rtdb.europe-west1.firebasedatabase.app/equipo.json')
     .subscribe( (resp: any) => {
           this.equipo = resp;
-          console.log("Equipo", resp);
+          //console.log("Equipo", resp);
     })  }
 }
