@@ -9,6 +9,7 @@ import { ProductoItem } from '../../interfaces/producto-item.interface';
   styleUrl: './item.component.css'
 })
 export class ItemComponent implements OnInit{
+
   producto: ProductoItem | undefined;
   productoId: string | undefined;
 
@@ -24,10 +25,9 @@ export class ItemComponent implements OnInit{
             }
 
             cargarProducto(id: string) {
-              this.productoService.cargarProducto(id).subscribe(
+              this.productoService.productoById(id).subscribe(
                 (producto: ProductoItem) => {
                   this.producto = producto;
-                  console.log('Codigo: ', this.producto.categoria);
                 },
                 (error) => {
                   console.error('Error al cargar el producto:', error);
